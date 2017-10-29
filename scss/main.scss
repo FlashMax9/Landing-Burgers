@@ -1,0 +1,280 @@
+$orange: #e25028;
+$yellow: #f8b43a;
+$green: #8ac03e;
+$dark: #2f3234;
+$white:#ffffff;
+
+.wrapper{
+width: 100%;
+height: 100%;
+min-height: 650px;
+}
+.section {
+height: 100%;
+min-width: 940px;
+min-height: 650px;
+}
+// 1-pages
+.welcome__section{
+background-image: url('.././img/bg/hero_bg.png');
+background-repeat: no-repeat;
+background-position: 50%;
+background-size: cover;
+position: relative;
+}
+.container{
+max-width: 1100px;
+margin: 0 auto;
+
+}
+.header{
+display: flex;
+justify-content: space-between;
+padding-top: 26px;
+}
+.header__logo{
+height: 69px;
+width: 92px;
+}
+.navigation{
+display: flex;
+justify-content: space-between;
+align-content: center;
+}
+.navig{
+font: 500 13px Ubuntu-Medium ;
+list-style: none;
+padding: 0;
+margin: 0;
+color:$white;
+text-transform: uppercase;
+display:flex;
+}
+.navig__item{
+position: relative;
+margin-right: 33px;
+&:before { 
+    display:inline-block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background:$white;
+    border-radius:50%;}
+}
+
+.navig__link{
+color: $white;
+text-decoration: none;
+}
+
+.button__order{
+font:500 13px Ubuntu-Medium;
+text-align: center;
+width: 100px;
+height: 38px;
+padding: 10px 15px;
+border-radius: 5px;
+background-color: $orange;
+color:$white;
+text-decoration: none;
+font-size: 13px;
+line-height: 1.42;
+text-transform: uppercase;
+transition: .5s;
+&:hover {
+background-color: darken($orange, 7%);
+}
+}
+
+.welcome__content{
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+justify-content: center;
+padding-top: 15vh;
+}
+.welcome__img{
+display: flex;
+justify-content: center;
+width: 451px;
+height: 424px;
+padding-bottom: 91px;
+}
+.welcome__img-burger{
+align-self: center;
+}
+.welcome__title{
+display: flex;
+flex-direction: column;
+width: 450px;
+margin-left: 10px;
+}
+.welcome__title-capion_one{
+font:72px Gagalin-Regular;
+text-transform: uppercase;
+color:$yellow;
+margin-bottom: 15px;
+}
+.welcome__title-caption_two{
+font: 65px/60px Lifehack-Medium;
+color: $white;
+}
+
+.arrow{
+text-align: center;
+margin-top: 50px;
+}
+.greeting__arrow-arrow{
+width: 27px;
+height: 14px;
+display: inline-block;
+}
+.points{
+position: fixed;
+display: flex;
+flex-direction: column;
+top:13vh;
+right: 4%;
+margin: 0;
+padding: 0;
+list-style: none;
+z-index: 1000;
+}
+.points__item{
+width: 16px;
+height: 16px;
+border-radius: 50%;
+position: relative;
+&:after{
+content: "";
+width: 6px;
+height: 6px;
+position: absolute;
+border-radius: 50%;
+background: $white;
+margin-left: 50%;
+margin-top: 50%;
+transform: translate(-50%,-50%);
+}
+&:hover{
+border: 1px solid $white;
+
+}
+}
+
+// 2-page
+
+.section__about{
+display: flex;
+align-items: center;
+height: 100vh;
+min-height: 650px;
+background-image: url('../img/bg/best-bg.png');
+background-repeat: no-repeat;
+background-position: 50%;
+background-size: cover;
+position: relative;
+}
+.section__title{
+margin-top: 79px;
+font: 400 72px Gagalin-Regular;
+text-align: center;
+color: $dark;
+margin-top: 79px;
+}
+.about-list{
+display: flex;
+list-style-type: none;
+margin: 0;
+padding: 0;
+align-items: center;
+}
+.about__item{
+flex:3;
+text-align: center;
+
+}
+.about__title{
+font:24px/28px Lifehack-Medium;
+color: $dark;
+text-align: center;
+margin-bottom: 20px;
+}
+.about__desc{
+font:300 14px Ubuntu-Light;
+color: rgba(47,50,52,.8);
+text-align: center;
+margin: 0;
+}
+
+// 3-page
+
+.selection__reviews{
+min-width:1100px ;
+min-height: 650px;
+height: 100vh;
+
+}
+.reviews__list{
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+flex-flow: row wrap;
+min-width: 1100px;
+height: 100%;
+}
+.reviews__item{
+flex: 1 0 25%;
+height: 50%;
+position: relative;
+&:hover > .reviews__desc{
+visibility: visible;
+opacity: 1;
+}
+}
+.reviews__img {
+// filter: grayscale(100);
+width: 100%;
+height: 100%;
+
+}
+.reviews__desc {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+padding: 60px 29px;
+background: rgba(20,20,20,.6);
+opacity: 0;
+visibility: hidden;
+box-sizing: border-box;
+}
+.reviews__name {
+font: 14px Gagalin-Regular;
+color: $white;
+margin-bottom: 15px;
+}
+.reviews__text {
+font: 300 14px/24px Ubuntu-Light;
+color: $white;
+}
+.reviews__link {
+&:hover {
+background: $dark;
+}
+}
+.btn{
+border-radius: 5px;
+font:500 13px Ubuntu-Medium ;
+color: $white;
+text-transform: uppercase;
+text-decoration: none;
+padding: 10px 15px;
+}
+.btn_gray{
+background: $dark;
+}
