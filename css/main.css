@@ -247,6 +247,11 @@
   background-size: cover;
   position: relative; }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  position: relative; }
+
 .section__title_about {
   margin: 0 82 87 0px;
   font: 400 72px gagalinregular;
@@ -362,7 +367,9 @@
 .menu {
   background-image: url("../img/bg/bg-menu.jpg");
   background-size: cover;
-  position: relative; }
+  position: relative;
+  height: 100vh;
+  min-height: 650px; }
 
 .menu-accord {
   list-style-type: none;
@@ -441,7 +448,6 @@
   background: url("../img/bg/bg-team.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
-  min-width: 1100px;
   min-height: 650px;
   height: 100vh; }
 
@@ -502,13 +508,17 @@
 .team-acco__item_active .team-acco__content {
   display: -webkit-inline-flex; }
 
-.container__order {
+.section_order {
   background: url("../img/bg/order-bg.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
-  min-width: 1100px;
   min-height: 650px;
   height: 100vh; }
+
+.container__order {
+  width: 940px;
+  margin: 0 auto;
+  position: relative; }
 
 .section__title_order {
   font: 400 72px gagalinregular;
