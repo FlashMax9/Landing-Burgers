@@ -16,22 +16,29 @@ min-height: 650px;
 }
 // 1-pages
 .welcome__section{
-background-image: url('.././img/bg/hero_bg.png');
+background-image: url('.././img/bg/hero_bg.png') ;
 background-repeat: no-repeat;
-background-position: 50%;
+// background-position: 50%;
 background-size: cover;
-position: relative;
+// position: relative;
+display: flex;
 }
 .container{
 max-width: 1100px;
 margin: 0 auto;
+flex: 1;
 
 }
 .header{
 align-items: center;
 display: flex;
-justify-content: space-between;
+// justify-content: space-between;
 padding-top: 26px;
+}
+.header__navigation{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 .header__logo{
 height: 69px;
@@ -43,50 +50,54 @@ justify-content: space-between;
 align-content: center;
 }
 .navig{
-font: 500 13px Ubuntu-Medium ;
+font: 500 13px ubuntumedium ;
 list-style: none;
 padding: 0;
-margin: 0;
+margin: 10px;
 color:$white;
 text-transform: uppercase;
 display:flex;
 }
-.navig__item{
-position: relative;
-margin-right: 33px;
-&:before { 
-    display:inline-block;
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background:$white;
-    border-radius:50%;}
+
+.navig__item {
+&:last-child {
+    .navig__link:after {
+    display: none;
+    }
+}
 }
 
-.navig__link{
-color: $white;
+.navig__link {
+color: #fff;
 text-decoration: none;
-}
+display: flex;
+align-items: center;
 
-.button__order{
-font:500 13px Ubuntu-Medium;
-text-align: center;
-width: 100px;
-height: 38px;
+&:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #fff;   
+    margin: 0 16px;
+}
+}
+.button__order {
+font:500 13px ubuntumedium;
 padding: 10px 15px;
-border-radius: 5px;
-background-color: $orange;
-color:$white;
+background: $orange;
+color: #fff;
 text-decoration: none;
-font-size: 13px;
+border-radius: 5px;
+display: inline-block;
 line-height: 1.42;
 text-transform: uppercase;
 transition: .5s;
 &:hover {
-background-color: darken($orange, 7%);
+    background-color: darken($orange, 7%);
+    }
 }
-}
-
 .welcome__content{
 display: flex;
 flex-flow: row nowrap;
@@ -97,12 +108,14 @@ padding-top: 15vh;
 .welcome__img{
 display: flex;
 justify-content: center;
-width: 451px;
-height: 424px;
+// width: 451px;
+// height: 424px;
 padding-bottom: 91px;
+flex:1;
 }
 .welcome__img-burger{
 align-self: center;
+flex: 1;
 }
 .welcome__title{
 display: flex;
@@ -111,13 +124,13 @@ width: 450px;
 margin-left: 10px;
 }
 .welcome__title-capion_one{
-font:72px Gagalin-Regular;
+font:72px gagalinregular;
 text-transform: uppercase;
 color:$yellow;
 margin-bottom: 15px;
 }
 .welcome__title-caption_two{
-font: 65px/60px Lifehack-Medium;
+font: 65px/60px lifehackmedium;
 color: $white;
 }
 
@@ -178,7 +191,7 @@ position: relative;
 }
 .section__title{
 margin-top: 79px;
-font: 400 72px Gagalin-Regular;
+font: 400 72px gagalinregular;
 text-align: center;
 color: $dark;
 margin-top: 79px;
@@ -196,19 +209,19 @@ text-align: center;
 
 }
 .about__title{
-font:24px/28px Lifehack-Medium;
+font:24px/28px lifehackmedium;
 color: $dark;
 text-align: center;
 margin-bottom: 20px;
 }
 .about__desc{
-font:300 14px Ubuntu-Light;
+font:300 14px ubuntulight;
 color: rgba(47,50,52,.8);
 text-align: center;
 margin: 0;
 }
 
-// 3-page
+// 6-page
 
 .selection__reviews{
 min-width:1100px ;
@@ -235,7 +248,7 @@ opacity: 1;
 }
 }
 .reviews__img {
-// filter: grayscale(100);
+filter: grayscale(100);
 width: 100%;
 height: 100%;
 
@@ -255,12 +268,12 @@ visibility: hidden;
 box-sizing: border-box;
 }
 .reviews__name {
-font: 14px Gagalin-Regular;
+font: 14px gagalinregular;
 color: $white;
 margin-bottom: 15px;
 }
 .reviews__text {
-font: 300 14px/24px Ubuntu-Light;
+font: 300 14px/24px ubuntulight;
 color: $white;
 }
 .reviews__link {
@@ -270,7 +283,7 @@ background: $dark;
 }
 .btn{
 border-radius: 5px;
-font:500 13px Ubuntu-Medium ;
+font:500 13px ubuntumedium;
 color: $white;
 text-transform: uppercase;
 text-decoration: none;
@@ -279,3 +292,125 @@ padding: 10px 15px;
 .btn_gray{
 background: $dark;
 }
+
+// page5
+.menu{
+    background-image: url('../img/bg/bg-menu.jpg');
+    background-size: cover;
+    position: relative;
+}
+.menu-accord{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.menu-accord__item,.menu-accord__link{
+    height: 100%;
+    display: block;
+    position: relative;
+    display: flex;
+}
+.menu-accord__link{
+    width: 80px;
+    
+}
+.menu-accord__item-type-active .menu-accord__description{
+    width: 550px;
+}
+.menu-accord__item{
+    display: flex;
+}
+.menu-accord__description{
+    width: 0;
+    overflow: hidden;
+}
+.menu-accord__title{
+    font: 400 40px gagalinregular;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-90deg) translateY(-50%);
+    display: inline-block;
+    white-space: nowrap;
+    color: $white;
+}
+.section__title-type-white{
+font: 400 72px gagalinregular;
+color: $white;
+position: absolute;
+top: 10%;
+left: 10%;
+}
+.menu-accord__text{
+    font: 300 14px ubuntulight;
+    color: $white;
+}
+// page4
+
+.section__team {
+    background: url('../img/bg/bg-team.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    min-width:1100px ;
+    min-height: 650px;
+    height: 100vh;
+    }
+    
+    // .team__container {
+    // position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // right: 0;
+    // width: 50%;
+    // background: rgba(#2f3234, .93);
+    // padding-left: 70px;
+    // display: flex;
+    // flex-direction: column;
+    // padding-top: 50px;
+    // }
+    
+    // .team-acco__trigger {
+    // color: #fff;
+    // display: flex;
+    // align-items: center;
+    
+    // &:before {
+    //     content: "";
+    //     height: 0;
+    //     width: 0;
+    //     border: 9px solid transparent;
+    //     border-top-color: $yellow;
+    //     border-bottom-width: 0px;
+    
+    // }
+    // }
+    
+    // .team-acco__content {
+    // display: flex;
+    // }
+    
+    // .team-acco__text {
+    // color: #fff;
+    // }
+    
+    // .team-acco__content {
+    // display: none;
+    // }
+    
+    // .team-acco__item_active {
+    // .team-acco__trigger {
+    //     color: $yellow;
+    
+    //     &:before {
+    //     transform: rotate(-180deg);
+    //     }
+    // }
+    
+    // .team-acco__content {
+    //     display: block;
+    // }
+    // }
