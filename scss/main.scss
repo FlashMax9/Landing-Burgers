@@ -364,5 +364,194 @@ left: 10%;
         height: 100px;
         border-radius: 50%;
     }
-    
- 
+    .section-title{
+        color: $yellow;
+        font: 400 72px gagalinregular;
+    }
+    .team-acco__trigger{
+        font: 400 14px gagalinregular;
+        color: $white;
+        text-decoration: none;
+    }
+   .team-acco__text-title{
+       font: 700 14px ubuntulight;
+       color: $white;
+   }
+   .team-acco__text-content{
+       font:300 14px ubuntulight;
+       color: $white;
+   }
+  .team__container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background: rgba(#2f3234, .93);
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+
+  }
+  .team-acco__content {
+    display: flex;
+  }
+  .team-acco__content {
+    display: none;
+  }
+  .team-acco__item_active {
+    .team-acco__trigger {
+      color: $yellow;
+    }
+    .team-acco__content {
+      display: block;
+    }
+  }
+
+
+
+
+//   page7
+
+.container__order{
+    background: url('../img/bg/order-bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    min-width:1100px ;
+    min-height: 650px;
+    height: 100vh;
+}
+.section__title{
+    font: 400 72px gagalinregular;
+    color: $yellow;
+    padding: 84px 218px;
+}
+.order__form {
+    margin-left: -5%;
+    display: flex;
+}
+.order__form-col {
+    width: 45%;
+    margin-left: 5%;
+  }
+
+.order__form-row {
+    margin-bottom: 16px;
+    display: flex;
+  }
+  
+  .order__form-label {
+    margin-bottom: 17px;
+    font: 300 ubuntulight;
+    color: $white;
+    font-size: 14px;
+  }
+  
+  .order__form-input {
+    font-size: 14px;
+    padding: 10px;
+    padding: 5px 10px;
+    border: 1px solid #d1cfcb;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .order__form-block {
+    display: block;
+    width: 100%;
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .order__form-row {
+    display: flex;
+    margin-left: -10px;
+  }
+  
+  .order__form-input_textarea {
+    height: 110px;
+    resize: none;
+  }
+  
+  .order__radio {
+    position: relative;
+    white-space: nowrap;
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .order__radio-elem {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+  }
+  
+  .order__radio-fake {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $white;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border-radius: 50%;
+      background: $orange;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: width .3s, height .3s;
+    }
+  }
+  
+  .order__radio-elem:checked {
+    &+.order__radio-fake {
+      &:after {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+  
+  .order__radio-title {
+    font-size: 14px;
+    color: $white;
+    font: 300 ubuntulight;
+    margin-left: 10px;
+  }
+  
+  
+  .order__form-button {
+    margin-right: 20px;
+    border: 0;
+    background: $orange;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: $white;
+    font: 300 ubuntumedium;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .order__form-button_reset {
+    padding-left: 0;
+    padding-right: 0;
+    text-transform: none;
+    background: transparent;
+  }
+//   page8
+.section__map{
+    background: url('../img/bg/map-bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    min-width:1100px ;
+    min-height: 650px;
+    height: 100vh;
+}
