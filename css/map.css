@@ -1,0 +1,6 @@
+.section__map {
+  background: url("../img/bg/map-bg.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 650px;
+  height: 100vh; }

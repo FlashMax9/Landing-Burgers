@@ -1,0 +1,37 @@
+$orange: #e25028;
+$yellow: #f8b43a;
+$green: #8ac03e;
+$dark: #2f3234;
+
+.points{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top:91px;
+    right: 50px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1000;
+    }
+    .points__item{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    &:after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border-radius: 50%;
+    background: $white;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+    }
+    &:hover{
+    border: 1px solid $white;
+    
+    }
+    }

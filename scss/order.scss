@@ -1,0 +1,146 @@
+$orange: #e25028;
+$yellow: #f8b43a;
+$green: #8ac03e;
+$dark: #2f3234;
+
+.section_order{
+    background: url('../img/bg/order-bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 650px;
+    height: 100vh;
+    }
+    .container__order{
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+    
+    }
+    .section__title_order{
+    font: 400 72px gagalinregular;
+    color: $yellow;
+    padding: 84px 218px;
+    }
+    .order__form {
+    margin-left: -5%;
+    display: flex;
+    }
+    .order__form-col {
+    width: 45%;
+    margin-left: 5%;
+    }
+    
+    .order__form-row {
+    margin-bottom: 16px;
+    display: flex;
+    }
+    
+    .order__form-label {
+    margin-bottom: 17px;
+    font: 300 ubuntulight;
+    color: $white;
+    font-size: 14px;
+    }
+    
+    .order__form-input {
+    font-size: 14px;
+    padding: 10px;
+    padding: 5px 10px;
+    border: 1px solid #d1cfcb;
+    border-radius: 5px;
+    width: 100%;
+    }
+    
+    .order__form-block {
+    display: block;
+    width: 100%;
+    flex: 1;
+    margin-left: 40px;
+    
+    & :last-child {
+      margin-right: 0px;
+    }
+    }
+    
+    .order__form-row {
+    display: flex;
+    margin-left: -10px;
+    }
+    
+    .order__form-input_textarea {
+    height: 110px;
+    resize: none;
+    }
+    
+    .order__radio {
+    position: relative;
+    white-space: nowrap;
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    }
+    
+    .order__radio-elem {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    }
+    
+    .order__radio-fake {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $white;
+    position: relative;
+    &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: $orange;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+    }
+    }
+    
+    .order__radio-elem:checked {
+    &+.order__radio-fake {
+    &:after {
+    width: 8px;
+    height: 8px;
+    }
+    }
+    }
+    
+    .order__radio-title {
+    font-size: 14px;
+    color: $white;
+    font: 300 ubuntulight;
+    margin-left: 10px;
+    }
+    
+    
+    .order__form-button {
+    margin-right: 20px;
+    border: 0;
+    background: $orange;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: $white;
+    font: 300 ubuntumedium;
+    padding: 10px 15px;
+    cursor: pointer;
+    }
+    
+    .order__form-button_reset {
+    padding-left: 0;
+    padding-right: 0;
+    text-transform: none;
+    background: transparent;
+    }
