@@ -14,12 +14,23 @@ $dark: #2f3234;
     width: 940px;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-direction:column;
     
     }
     .section__title_order{
-    font: 400 72px gagalinregular;
-    color: $yellow;
-    padding: 84px 218px;
+    
+    }
+    h2{
+      margin-top: 80px;
+      text-align: center;
+      margin-bottom: 79px;
+      font: 400 72px gagalinregular;
+      color: $yellow;
+     
+    }
+    .order__form-buttons{
+      margin-right: 42px;
     }
     .order__form {
     margin-left: -5%;
@@ -30,10 +41,6 @@ $dark: #2f3234;
     margin-left: 5%;
     }
     
-    .order__form-row {
-    margin-bottom: 16px;
-    display: flex;
-    }
     
     .order__form-label {
     margin-bottom: 17px;
@@ -64,7 +71,7 @@ $dark: #2f3234;
     
     .order__form-row {
     display: flex;
-    margin-left: -10px;
+    margin-bottom: 16px;
     }
     
     .order__form-input_textarea {
@@ -126,14 +133,14 @@ $dark: #2f3234;
     
     
     .order__form-button {
+    
     margin-right: 20px;
     border: 0;
     background: $orange;
-    font-size: 13px;
     text-transform: uppercase;
     border-radius: 5px;
     color: $white;
-    font: 300 ubuntumedium;
+    font: 13px 300 ubuntumedium;
     padding: 10px 15px;
     cursor: pointer;
     }

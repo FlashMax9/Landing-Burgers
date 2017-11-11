@@ -446,12 +446,26 @@
 .container__order {
   width: 940px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
-.section__title_order {
+h2 {
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 79px;
   font: 400 72px gagalinregular;
-  color: #f8b43a;
-  padding: 84px 218px; }
+  color: #f8b43a; }
+
+.order__form-buttons {
+  margin-right: 42px; }
 
 .order__form {
   margin-left: -5%;
@@ -463,13 +477,6 @@
 .order__form-col {
   width: 45%;
   margin-left: 5%; }
-
-.order__form-row {
-  margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
 
 .order__form-label {
   margin-bottom: 17px;
@@ -501,7 +508,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -10px; }
+  margin-bottom: 16px; }
 
 .order__form-input_textarea {
   height: 110px;
@@ -563,11 +570,10 @@
   margin-right: 20px;
   border: 0;
   background: #e25028;
-  font-size: 13px;
   text-transform: uppercase;
   border-radius: 5px;
   color: #ffffff;
-  font: 300 ubuntumedium;
+  font: 13px 300 ubuntumedium;
   padding: 10px 15px;
   cursor: pointer; }
 
@@ -579,8 +585,8 @@
 
 .section__map {
   height: 100vh;
-  min-height: 650px;
-  background-image: url("../img/bg/map-bg.jpg") center center no-repeat;
+  min-height: 600px;
+  background: url("../img/bg/map-bg.jpg") center center no-repeat;
   background-position: 50%;
   background-size: cover;
   position: relative; }
