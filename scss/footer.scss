@@ -36,27 +36,14 @@ $white:#ffffff;
     text-decoration: none;
     font: 14px bold ubuntulight;
   }
+
+.info__footer_social {
+  text-align: right;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
   
-  .info__footer-social {
-    text-align: right;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .social {
-    position: relative;
-    top: 50%;
-    display: flex;
-    align-items: center;
-  }
-  
-  .socials__item {
-    margin-left: 10px;
-  }
-  
-  .socials__link {
-    display: inline-block;
-   
-  }
+
   
   
