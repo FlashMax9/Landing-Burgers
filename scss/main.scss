@@ -4,16 +4,27 @@ $green: #8ac03e;
 $dark: #2f3234;
 $white:#ffffff;
 
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
+
 .wrapper{
 width: 100%;
 height: 100%;
-min-height: 650px;
+min-height: rem(650px);
 }
 .section {
 height: 100%;
-min-width: 940px;
-min-height: 650px;
+min-width: rem(940px);
+min-height: rem(650px);
 }
+
+
+@function rem ($size){
+    @return ($size/16)+rem;
+  }
 
 @import "./welcome.scss";
 @import "./about.scss";
@@ -27,7 +38,8 @@ min-height: 650px;
 @import "./footer.scss";
 @import "./social.scss";
 @import "./hamburger.scss";
-
+@import "./media.scss";
+@import "./layout.scss";
 
 
 

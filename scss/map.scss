@@ -1,11 +1,12 @@
 
 .map {
     height: 100vh;
-    min-height: 600px;
+    min-height: rem(600px);
     background: url('../img/bg/map-bg.jpg') center center no-repeat;
     background-position: 50%;
     background-size: cover;
     position: relative;
+    max-width: rem(940px);
   }
   
  

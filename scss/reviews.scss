@@ -5,7 +5,7 @@ $dark: #2f3234;
 
 .reviews{
     // min-width:1100px ;
-    min-height: 650px;
+    min-height: rem(650px);
     height: 100vh;
     }
 
@@ -42,33 +42,34 @@ $dark: #2f3234;
     right: 0;
     height: 100%;
     width: 100%;
-    padding: 60px 29px;
+    padding:rem( 60px ) rem(29px);
     background: rgba(20,20,20,.6);
     opacity: 0;
     visibility: hidden;
     box-sizing: border-box;
     }
     .reviews__name {
-    font: 14px gagalinregular;
+    font:rem( 14px )gagalinregular;
     color: $white;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
     }
     .reviews__text {
-    font: 300 14px/24px ubuntulight;
+    font: 300 rem(14px)/rem(24px) ubuntulight;
     color: $white;
     }
     .reviews__link {
-    &:hover {
-    background: $dark;
+     & :hover {
+      background: $dark;
     }
     }
     .btn{
-    border-radius: 5px;
-    font:500 13px ubuntumedium;
+    border-radius: rem(5px);
+    font:500 rem( 13px )ubuntumedium;
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 10px 15px;
+    padding:rem( 10px ) rem(15px);
+    box-sizing: border-box;
     }
     .btn_gray{
     background: $dark;

@@ -1,0 +1,77 @@
+.team {
+  background: url("../img/bg/bg-team.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: rem(650px);
+  height: 100vh; }
+
+.team-acco {
+  margin: rem(0px);
+  padding: rem(0px);
+  list-style: none; }
+
+.team-acco__pic-img {
+  width: rem(100px);
+  height: rem(100px);
+  border-radius: 50%;
+  margin-right: rem(30px); }
+
+.section-title {
+  color: #f8b43a;
+  font: 400 rem(72px) gagalinregular; }
+
+.team-acco__text-title {
+  font: 700 rem(14px) ubuntulight;
+  color: #ffff; }
+
+.team-acco__text-content {
+  font: 300 rem(14px) ubuntulight;
+  color: #ffff; }
+
+.team__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background: rgba(47, 50, 52, 0.93);
+  padding-left: rem(70px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: rem(50px); }
+
+.team-acco__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: rem(17px);
+  padding-bottom: rem(41px); }
+
+.team-acco__content {
+  display: none; }
+
+.team-acco__item_active .team-acco__trigger {
+  color: #f8b43a; }
+
+.team-acco__item_active .team-acco__content {
+  display: -webkit-inline-flex; }
+
+.team-acco__item {
+  margin: rem(35px); }
+  .team-acco__item :before {
+    content: "";
+    display: inline-block;
+    width: rem(0px);
+    height: rem(0px);
+    border-left: rem(6px) solid transparent;
+    border-right: rem(6px) solid transparent;
+    border-bottom: rem(12px) siled #e25028;
+    vertical-align: middle; }

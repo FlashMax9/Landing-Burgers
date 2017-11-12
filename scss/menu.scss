@@ -8,7 +8,7 @@ $dark: #2f3234;
     background-size: cover;
     position: relative;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     }
     .menu-accord{
     list-style-type: none;
@@ -27,15 +27,15 @@ $dark: #2f3234;
     display: flex;
     }
     .menu-accord__link{
-    width: 80px;
+    width: rem(80px);
     background-size: cover;
     background-color: rgba(0,0,0,0.7);
     justify-content: center;
     
     }
     .menu-accord__item-type-active .menu-accord__description{
-    width: 550px;
-    padding: 63px 35px;
+    width: rem(550px);
+    padding:rem( 63px ) rem(35px);
     }
     .menu-accord__item{
     display: flex;
@@ -48,7 +48,7 @@ $dark: #2f3234;
     
     }
     .menu-accord__title{
-    font: 400 40px gagalinregular;
+    font: 400 rem( 40px )gagalinregular;
     position: absolute;
     top: 50%;
     transform: rotate(-90deg) translateY(-50%);
@@ -58,15 +58,15 @@ $dark: #2f3234;
     line-height: 5px;
     }
     .section__title-type-white{
-    font: 400 72px gagalinregular;
+    font: 400rem( 72px )gagalinregular;
     color: $white;
     position: absolute;
     top: 10%;
     left: 10%;
     }
     .menu-accord__text{
-    font: 300 14px ubuntulight;
+    font: 300 rem( 14px )ubuntulight;
     color: $white;
-    line-height: 24px;
-    margin: 0px;
+    line-height:rem(24px);
+    margin: rem(0px);
     }

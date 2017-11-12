@@ -11,7 +11,7 @@ $white:#ffffff;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px 0;
+    padding:rem( 10px )0;
   }
   .footer__container {
     display: flex;
@@ -21,26 +21,28 @@ $white:#ffffff;
   }
   
   .info__footer {
-    width: 50%;
-    margin-bottom: 15px;
+    flex: 1;
+    // width: 50%;
+    // margin-bottom: 15px;
   
   }
   
   .address {
     color: $white;
-    font: 300 14px ubuntulight;
+    font: 300 rem( 14px )ubuntulight;
   }
   
   .phone {
     color: $orange;
     text-decoration: none;
-    font: 14px bold ubuntulight;
+    font:rem( 14px ) bold ubuntulight;
   }
 
 .info__footer_social {
   text-align: right;
   margin-bottom: 0;
   display: flex;
+  justify-content: flex-end;
 }
   
 

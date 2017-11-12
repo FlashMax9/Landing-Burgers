@@ -343,88 +343,72 @@
 
             <section class="order">
                 <div class="container__order">
-                    <div class="section__title_order">
-                        <h2>Заказать доставку</h2>
-                    </div>
+                        <h2 class="section__title_order">Заказать доставку</h2>
                     <form class="order__form-tag" id="order-form">
                         <div class="order__form">
                             <div class="order__form-col">
                                 <div class="order__form-row">
-                                    <div class="order__form-label">Имя</div>
-                                    <label class="order__form-block">
-
-                                        <input class="order__form-input" name="name" type="text" placeholder="">
-                                    </label>
-                                    <div class="order__form-label">Телефон</div>
-                                    <label class="order__form-block">
-
-                                        <input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
-                                    </label>
+                                    <div class="order__form-label">
+                                    <label class="order__form-block" for="name">Имя</label>
+                                    <input type="text" class="order__form-input" id="name"  placeholder="">
+                                </div>
+                                <div class="order__form-label">
+                                    <label class="order__form-block" for="phone">Телефон</label>
+                                    <input type="text" class="order__form-input phone-mask" id="phone"   placeholder="">
+                                </div>
                                 </div>
                                 <div class="order__form-row">
-                                    <div class="order__form-label">Улица</div>
-                                    <label class="order__form-block">
-
-                                        <input class="order__form-input" name="street" type="text" placeholder="">
-                                    </label>
+                                    <div class="order__form-label">
+                                    <label class="order__form-block" for="street">Улица</label>
+                                    <input type="text" class="order__form-input" id="street"  placeholder="">
+                                </div>
                                 </div>
                                 <div class="order__form-row">
-                                    <div class="order__form-label">Дом</div>
-                                    <label class="order__form-block">
-
-                                        <input class="order__form-input" name="home" type="text" placeholder="">
-                                    </label>
-                                    <div class="order__form-label">Корпус</div>
-                                    <label class="order__form-block">
-
-                                        <input class="order__form-input" name="part" type="text" placeholder="">
-                                    </label>
-                                    <div class="order__form-label">Квартира</div>
-                                    <label class="order__form-block">
-
-                                        <input class="order__form-input" name="appt" type="text" placeholder="">
-                                    </label>
-                                    <div class="order__form-label">Этаж</div>
-                                    <label class="order__form-block">
-
-                                        <input class="order__form-input" name="floor" type="text" placeholder="">
-                                    </label>
+                                    <div class="order__form-label">
+                                    <label class="order__form-block" for="home">Дом</label>
+                                    <input type="text" class="order__form-input" id="home"  placeholder="">
+                                </div>
+                                    <div class="order__form-label">
+                                    <label class="order__form-block" for="part">Корпус </label>
+                                        <input type="text" class="order__form-input" id="part" placeholder="">
+                                    </div>
+                                    <div class="order__form-label">
+                                    <label class="order__form-block" for="appt">Квартира </label>
+                                        <input type="text" class="order__form-input" id="appt"  placeholder="">
+                                    </div>
+                                    <div class="order__form-label">
+                                    <label class="order__form-block" for="floor"> Этаж </label>
+                                        <input type="text" class="order__form-input" id="floor"  placeholder="">
+                                    </div>
                                 </div>
                             </div>
                             <div class="order__form-col">
                                 <div class="order__form-row">
-                                    <div class="order__form-label">Комментарий</div>
-                                    <label class="order__form-block">
-
+                                    <div class="order__form-label">
+                                    <label class="order__form-block" for="comment"> Комментарий  </label>
                                         <textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
-                                    </label>
+                                    </div>
                                 </div>
                                 <div class="order__form-buttons">
                                     <div class="order__form-row">
-                                        <div class="order__radio-title">Потребуется сдача</div>
+                                        <div class="order__radio-title">
                                         <div class="order__radio-fake"></div>
-                                        <label class="order__radio">
-                                            <input class="order__radio-elem" name="payment" type="radio">
-                                            
-
-                                        </label>
-                                        <div class="order__radio-title">Оплата по карте</div>
+                                        <label class="order__radio">Потребуется сдача</label>
+                                        <input class="order__radio-elem" name="payment" type="radio">
+                                    </div>
+                                        <div class="order__radio-title">
                                           <div class="order__radio-fake"></div>
-                                        <label class="order__radio">
-                                            
+                                        <label class="order__radio">Оплата по карте </label>
                                             <input class="order__radio-elem" name="payment" type="radio">
-                                          
-
-                                        </label>
+                                        </div>
+                                       
                                     </div>
                                     <div class="order__form-row">
-                                        <div class="order__radio-title">Не перезванивать</div>
+                                        <div class="order__radio-title">
                                         <div class="order__radio-fake"></div>
-                                        <label class="order__radio order__radio_checkbox">
+                                        <label class="order__radio order__radio_checkbox">Не перезванивать</label>
                                             <input class="order__radio-elem" name="callback" type="checkbox">
-                                            
-
-                                        </label>
+                                        </div>
                                     </div>
                                     <div class="order__form-row">
                                         <input class="order__form-button" name="zakaz" type="submit" value="Заказать">
