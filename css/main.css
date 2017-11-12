@@ -1,15 +1,14 @@
 .wrapper {
   width: 100%;
   height: 100%;
-  min-height: 650px;
-  overflow: hidden; }
+  min-height: 650px; }
 
 .section {
   height: 100%;
   min-width: 940px;
   min-height: 650px; }
 
-.welcome__section {
+.welcome {
   background-image: url(".././img/bg/hero_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,7 +153,7 @@
   font: 65px/60px lifehackmedium;
   color: #ffffff; }
 
-.section__about {
+.about {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -214,7 +213,7 @@
   text-align: center;
   margin: 0; }
 
-.section__team {
+.team {
   background: url("../img/bg/bg-team.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
@@ -363,7 +362,7 @@
   line-height: 24px;
   margin: 0px; }
 
-.selection__reviews {
+.reviews {
   min-height: 650px;
   height: 100vh; }
 
@@ -437,7 +436,7 @@
 .btn_gray {
   background: #2f3234; }
 
-.section_order {
+.order {
   background: url("../img/bg/order-bg.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
@@ -584,7 +583,7 @@ h2 {
   text-transform: none;
   background: transparent; }
 
-.section__map {
+.map {
   height: 100vh;
   min-height: 600px;
   background: url("../img/bg/map-bg.jpg") center center no-repeat;
@@ -644,7 +643,7 @@ h2 {
   height: 14px;
   display: inline-block; }
 
-.footer {
+.footer__end {
   background: url("../img/bg/bg-map.jpg") center bottom no-repeat;
   background-size: cover;
   position: absolute;
@@ -687,11 +686,7 @@ h2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
+  display: flex; }
 
 .social {
   position: relative;
@@ -718,8 +713,7 @@ h2 {
   -o-transition: .3s;
   transition: .3s; }
   .socials__link:hover {
-    opacity: 1;
-    background-color: #cb411b; }
+    opacity: 1; }
 
 .social__link-icon {
   margin: 20px;

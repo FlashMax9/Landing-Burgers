@@ -4,7 +4,7 @@ $green: #8ac03e;
 $dark: #2f3234;
 $white:#ffffff;
 
-.footer{
+.footer__end{
     background: url('../img/bg/bg-map.jpg') center bottom no-repeat;
     background-size: cover;
     position: absolute;
@@ -41,7 +41,6 @@ $white:#ffffff;
   text-align: right;
   margin-bottom: 0;
   display: flex;
-  justify-content: flex-end;
 }
   
 
