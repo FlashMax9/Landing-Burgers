@@ -4,8 +4,8 @@ $green: #8ac03e;
 $dark: #2f3234;
 
 .reviews{
-    // min-width:1100px ;
-    min-height: rem(650px);
+    // min-width:1100 ;
+    min-height: rem(650);
     height: 100vh;
     }
 
@@ -16,7 +16,7 @@ $dark: #2f3234;
     list-style: none;
     display: flex;
     flex-flow: row wrap;
-    // min-width: 1100px;
+    // min-width: 1100;
     height: 100%;
     }
     .reviews__item{
@@ -42,19 +42,19 @@ $dark: #2f3234;
     right: 0;
     height: 100%;
     width: 100%;
-    padding:rem( 60px ) rem(29px);
+    padding:rem( 60 ) rem(29);
     background: rgba(20,20,20,.6);
     opacity: 0;
     visibility: hidden;
     box-sizing: border-box;
     }
     .reviews__name {
-    font:rem( 14px )gagalinregular;
+    font:rem( 14 )gagalinregular;
     color: $white;
-    margin-bottom: rem(15px);
+    margin-bottom: rem(15);
     }
     .reviews__text {
-    font: 300 rem(14px)/rem(24px) ubuntulight;
+    font: 300 rem(14)/rem(24) ubuntulight;
     color: $white;
     }
     .reviews__link {
@@ -63,12 +63,12 @@ $dark: #2f3234;
     }
     }
     .btn{
-    border-radius: rem(5px);
-    font:500 rem( 13px )ubuntumedium;
+    border-radius: rem(5);
+    font:500 rem( 13 )ubuntumedium;
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
-    padding:rem( 10px ) rem(15px);
+    padding:rem( 10 ) rem(15);
     box-sizing: border-box;
     }
     .btn_gray{

@@ -11,8 +11,14 @@ $white:#ffffff;
     bottom: 0;
     left: 0;
     right: 0;
-    padding:rem( 10px )0;
+    padding:rem(10) rem(0);
+   
   }
+  // .container{
+  //   width: rem(940);
+  //   margin: 0 auto;
+  //   position: relative;
+  //   }
   .footer__container {
     display: flex;
     flex-direction: row;
@@ -23,19 +29,19 @@ $white:#ffffff;
   .info__footer {
     flex: 1;
     // width: 50%;
-    // margin-bottom: 15px;
+    // margin-bottom: 15;
   
   }
   
   .address {
     color: $white;
-    font: 300 rem( 14px )ubuntulight;
+    font: 300 rem( 14 )ubuntulight;
   }
   
   .phone {
     color: $orange;
     text-decoration: none;
-    font:rem( 14px ) bold ubuntulight;
+    font:rem( 14 ) bold ubuntulight;
   }
 
 .info__footer_social {

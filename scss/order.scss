@@ -8,11 +8,11 @@ $white:#fff;
   background: url('../img/bg/order-bg.jpg') center center no-repeat;
   background-size: cover;
   position: relative;
-  min-height: rem(650px);
+  min-height: rem(650);
   height: 100vh;
   }
   .container__order{
-  width: rem(940px);
+  width: rem(940);
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -20,10 +20,10 @@ $white:#fff;
 
   }
   .section__title_order{
-  margin-top: rem(80px);
+  margin-top: rem(80);
   text-align: center;
-  margin-bottom: rem(79px);
-  font: 400 rem( 72px )gagalinregular;
+  margin-bottom: rem(79);
+  font: 400 rem( 72 )gagalinregular;
   color: $yellow;
   }
   .order__form {
@@ -37,35 +37,35 @@ $white:#fff;
 
   .order__form-row {
   display: flex;
-  margin-bottom: rem(16px);
+  margin-bottom: rem(16);
   }
 
   .order__form-label{
-  margin-right: rem(20px);
+  margin-right: rem(20);
   }
   .order__form-label {
-  margin-bottom: rem(17px);
+  margin-bottom: rem(17);
   font: 300 ubuntulight;
   color: $white;
-  font-size: rem(14px);
+  font-size: rem(14);
   flex: 1;
   }
   .order__form-block {
   // display: block;
   width: 100%;
   flex: 1;
-  margin-right: rem(40px);
+  margin-right: rem(40);
 
   & :last-child {
-  margin-right: rem(0px);
+  margin-right: rem(0);
   }
   }
   .order__form-input {
-  font-size: rem(14px);
-  // padding: 10px;
-  padding:rem( 5px ) rem(10px);
-  border:rem( 1px )solid #d1cfcb;
-  border-radius: rem(5px);
+  font-size: rem(14);
+  // padding: 10;
+  padding:rem( 5 ) rem(10);
+  border:rem( 1 )solid #d1cfcb;
+  border-radius: rem(5);
   width: 100%;
   box-sizing: border-box;
   }
@@ -76,17 +76,17 @@ $white:#fff;
 
 
   .order__form-buttons{
-    margin-left: rem(42px);
+    margin-left: rem(42);
   }
   .order__form-input_textarea {
-  height: rem(110px);
+  height: rem(110);
   resize: none;
   }
 
   .order__radio {
   position: relative;
   white-space: nowrap;
-  margin-right: rem(20px);
+  margin-right: rem(20);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -95,12 +95,12 @@ $white:#fff;
   .order__radio-elem {
   position: absolute;
   top: 0;
-  left: rem(-9999px);
+  left: rem(-9999);
   }
 
   .order__radio-fake {
-  width: rem(16px);
-  height: rem(16px);
+  width: rem(16);
+  height: rem(16);
   border-radius: 50%;
   background: $white;
   position: relative;
@@ -108,8 +108,8 @@ $white:#fff;
   content: "";
   display: block;
   position: absolute;
-  width: rem(0px);
-  height: rem(0px);
+  width: rem(0);
+  height: rem(0);
   border-radius: 50%;
   background: $orange;
   top: 50%;
@@ -122,30 +122,30 @@ $white:#fff;
   .order__radio-elem:checked {
   &+.order__radio-fake {
   &:after {
-  width: rem(8px);
-  height: rem(8px);
+  width: rem(8);
+  height: rem(8);
   }
   }
   }
 
   .order__radio-title {
-  font-size: rem(14px);
+  font-size: rem(14);
   color: $white;
   font: 300 ubuntulight;
-  margin-left: rem(10px);
+  margin-left: rem(10);
   }
 
 
   .order__form-button {
 
-  margin-right: rem(20px);
+  margin-right: rem(20);
   border: 0;
   background: $orange;
   text-transform: uppercase;
-  border-radius: rem(5px);
+  border-radius: rem(5);
   color: $white;
-  font:rem( 13px )300 ubuntumedium;
-  padding:rem( 10px ) rem(15px);
+  font:rem( 13 )300 ubuntumedium;
+  padding:rem( 10 ) rem(15);
   cursor: pointer;
   }
 

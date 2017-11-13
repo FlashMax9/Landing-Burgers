@@ -7,7 +7,7 @@ $dark: #2f3234;
     display: flex;
     align-items: center;
     height: 100vh;
-    min-height: rem(650px);
+    min-height: rem(650);
     background-image: url('../img/bg/best-bg.png');
     background-repeat: no-repeat;
     background-position: 50%;
@@ -15,16 +15,16 @@ $dark: #2f3234;
     position: relative;
     }
     .container{
-    width: rem(940px);
+    width: rem(940);
     margin: 0 auto;
     position: relative;
     }
     .section__title_about{
     // margin:0 82 87 0px;
-    font: 400 rem( 72px )gagalinregular;
+    font: 400 rem(72)gagalinregular;
     text-align: center;
     color: $dark;
-    margin-top: rem(-120px);
+    margin-top: rem(-120);
     
     }
     .about-list{
@@ -40,13 +40,13 @@ $dark: #2f3234;
     
     }
     .about__title{
-    font:rem(24px) lifehackmedium;
+    font:rem(24) lifehackmedium;
     color: $dark;
     text-align: center;
-    margin-bottom: rem(20px);
+    margin-bottom: rem(20);
     }
     .about__desc{
-    font:300 rem( 14px )ubuntulight;
+    font:300 rem(14)ubuntulight;
     color: rgba(47,50,52,.8);
     text-align: center;
     margin: 0;
