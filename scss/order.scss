@@ -11,14 +11,14 @@ $white:#fff;
   min-height: rem(650);
   height: 100vh;
   }
-  .container__order{
-  width: rem(940);
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  flex-direction:column;
+  // .container__order{
+  // width: rem(940);
+  // margin: 0 auto;
+  // position: relative;
+  // display: flex;
+  // flex-direction:column;
 
-  }
+
   .section__title_order{
   margin-top: rem(80);
   text-align: center;
@@ -29,10 +29,19 @@ $white:#fff;
   .order__form {
   margin-left: -5%;
   display: flex;
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
   }
   .order__form-col {
   width: 45%;
   margin-left: 5%;
+  @include phones {
+    width: 100%;
+    margin-left: 0;
+  }
   }
 
   .order__form-row {
@@ -69,14 +78,17 @@ $white:#fff;
   width: 100%;
   box-sizing: border-box;
   }
-
-
-
-
-
+  .order__form-input:focus {
+    background: rgb(136, 132, 132); 
+    border: 1px solid $yellow;
+  }
+  .order__radio-elem:focus {
+    background: rgb(136, 132, 132); 
+    border: 1px solid $yellow;
+  }
 
   .order__form-buttons{
-    margin-left: rem(42);
+    margin-left: rem(3);
   }
   .order__form-input_textarea {
   height: rem(110);

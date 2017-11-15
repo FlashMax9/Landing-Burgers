@@ -30,6 +30,9 @@ $white:#ffff;
     font: 400 rem(14) gagalinregular;
     color: $white;
     text-decoration: none;
+    @include tablets {
+      font-size: rem(25);
+    }
     }
     .team-acco__text-title{
     font: 700 rem(14) ubuntulight;
@@ -50,6 +53,11 @@ $white:#ffff;
     display: flex;
     flex-direction: column;
     padding-top: rem(50);
+    
+    @include tablets {
+      width: 100%;
+      padding: 0;
+    }
     
     }
     .team-acco__content {
@@ -73,7 +81,7 @@ $white:#ffff;
 
 .team-acco__item{
 margin: rem(40);
-  & :before{
+  &:before{
     content: "";
     display: inline-block;
     width: rem(0);

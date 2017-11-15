@@ -14,11 +14,11 @@ $dark: #2f3234;
     background-size: cover;
     position: relative;
     }
-    .container{
-    width: rem(940);
-    margin: 0 auto;
-    position: relative;
-    }
+    // .container{
+    // width: rem(940);
+    // margin: 0 auto;
+    // position: relative;
+    // }
     .section__title_about{
     // margin:0 82 87 0px;
     font: 400 rem(72)gagalinregular;
@@ -33,10 +33,16 @@ $dark: #2f3234;
     margin: 0;
     padding: 0;
     align-items: center;
+    @include phones {
+        flex-direction: column;
+      }
     }
     .about__item{
     flex:3;
     text-align: center;
+    @include phones {
+        flex-direction: row;
+      }
     
     }
     .about__title{
