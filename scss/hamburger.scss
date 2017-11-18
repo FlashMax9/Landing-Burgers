@@ -1,0 +1,12 @@
+.nav-hamburger__line{
+    width: rem(20);
+    height: rem(8);
+    background: #fff;
+    display: inline-block;
+    border-radius: rem(2);
+}
+.nav-hamburger{
+    display: flex;
+    flex-direction: column;
+    // display: none;
+}

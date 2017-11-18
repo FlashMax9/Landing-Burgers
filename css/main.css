@@ -851,6 +851,24 @@ html {
   width: 1.25rem;
   height: 1.25rem; }
 
+.nav-hamburger__line {
+  width: 1.25rem;
+  height: 0.5rem;
+  background: #fff;
+  display: inline-block;
+  border-radius: 0.125rem; }
+
+.nav-hamburger {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
 html,
 body {
   height: 100%; }
