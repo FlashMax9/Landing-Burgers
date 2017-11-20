@@ -15,21 +15,25 @@ $dark: #2f3234;
     padding: 0;
     list-style: none;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
+    // flex-flow: row wrap;
     // min-width: 1100;
     height: 100%;
+    @include tablets{
+      display: flex;
+    }
     }
     .reviews__item{
     flex: 1 0 25%;
-    height: 50%;
+    // // height: 50%;
     position: relative;
     &:hover > .reviews__desc{
     visibility: visible;
     opacity: 1;
     }
     @include tablets {
-        width: 50%;
-        height: 25%;
+        height: 50%;
+        // flex-wrap: wrap;
       }
     }
     .reviews__img {
@@ -53,17 +57,17 @@ $dark: #2f3234;
     box-sizing: border-box;
 
     @include tablets {
-        font-size: rem(14px);
+        font-size: rem(14);
         padding: 0 12%;
         text-align: center;
       }
     }
     .reviews__name {
-    font:rem( 14 )gagalinregular;
+    font:rem(14)gagalinregular;
     color: $white;
     margin-bottom: rem(15);
     @include tablets {
-        margin-bottom: rem(14px);
+        margin-bottom: rem(14);
       }
     }
     .reviews__text {
@@ -80,11 +84,11 @@ $dark: #2f3234;
     }
     .btn{
     border-radius: rem(5);
-    font:500 rem( 13 )ubuntumedium;
+    font:500 rem(13) ubuntumedium;
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
-    padding:rem( 10 ) rem(15);
+    padding: rem(10) rem(15);
     box-sizing: border-box;
     }
     .btn_gray{

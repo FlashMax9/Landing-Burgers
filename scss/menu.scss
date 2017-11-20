@@ -36,6 +36,7 @@ $dark: #2f3234;
     .menu-accord__item-type-active .menu-accord__description{
     width: rem(550);
     padding:rem( 63 ) rem(35);
+    display: none;
     }
     .menu-accord__item{
     display: flex;
@@ -55,10 +56,14 @@ $dark: #2f3234;
     display: inline-block;
     white-space: nowrap;
     color: $white;
-    line-height: 5;
+    line-height: 1rem;
+    @include tablets{
+        line-height: 1rem;
+        top: 70%;
+    }
     }
     .section__title-type-white{
-    font: 400rem( 72 )gagalinregular;
+    font: 400 rem( 72 )gagalinregular;
     color: $white;
     position: absolute;
     top: 10%;

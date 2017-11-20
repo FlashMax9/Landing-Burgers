@@ -13,6 +13,9 @@ $dark: #2f3234;
     padding: 0;
     list-style: none;
     z-index: 1000;
+    @include phones{
+        display: none;
+    }
     }
     .points__item{
     width: rem(16);

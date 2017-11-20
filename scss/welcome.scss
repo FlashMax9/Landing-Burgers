@@ -20,15 +20,13 @@ $dark: #2f3234;
     .header{
     // align-items: center;
     display: flex;
-    padding-top: rem(26);
+    padding-top: rem(20);
     }
     .header__navigation{
     display: flex;
     align-items: center;
     margin-left: auto;
-    @include tablets {
-        display: none;
-      }
+   
     }
     .header__logo{
     height: rem(69);
@@ -47,6 +45,12 @@ $dark: #2f3234;
     color:$white;
     text-transform: uppercase;
     display:flex;
+    @include tablets {
+        display: none;
+      }
+      @include phones {
+        display: none;
+      }
     }
     
     .navig__item {
@@ -84,15 +88,15 @@ $dark: #2f3234;
     line-height: 1.42;
     text-transform: uppercase;
     transition: .5s;
+    margin-left: rem(10);
+    margin-top: rem(-10);
     &:hover {
         background-color: darken($orange, 7%);
         }
     }
     .welcome__content{
     display: flex;
-    // flex-flow: row nowrap;
     align-items: center;
-    // justify-content: center;
     height: 100vh;
 
     @include tablets {
@@ -100,18 +104,30 @@ $dark: #2f3234;
         align-items: center;
         text-align: center;
         padding: 0 20%;
+        // padding: 0 rem(151);
+      }
+      @include phones{
+        padding: rem(0) ;
       }
     }
     .welcome__img{
     // display: flex;
     // justify-content: center;
     // flex:1;
+    @include tablets{
+        max-width: 63%
+    }
+    
  
     }
     .welcome__img-burger{
     align-self: center;
     flex: 1;
     // margin-top: -267px;
+    @include tablets{
+        width:100% 
+    }
+    
     }
     .welcome__title{
     display: flex;
@@ -129,3 +145,22 @@ $dark: #2f3234;
     font: rem(65)/rem(60) lifehackmedium;
     color: $white;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

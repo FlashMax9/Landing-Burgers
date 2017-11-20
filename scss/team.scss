@@ -15,6 +15,12 @@ $white:#ffff;
       margin: rem(0);
       padding: rem(0);
       list-style: none;
+      @include tablets{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        // margin: rem(100) auto;
+      }
     }
     .team-acco__pic-img{
     width: rem(100);
@@ -32,7 +38,15 @@ $white:#ffff;
     text-decoration: none;
     @include tablets {
       font-size: rem(25);
+      
     }
+    }
+    .team-acco__text{
+      @include tablets{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
     }
     .team-acco__text-title{
     font: 700 rem(14) ubuntulight;
@@ -64,6 +78,12 @@ $white:#ffff;
     display: flex;
     padding-top: rem(17);
     padding-bottom: rem(41);
+    @include tablets{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      // flex-wrap: wrap;
+    }
     }
     .team-acco__content {
     display: none;
@@ -78,9 +98,24 @@ $white:#ffff;
     }
   }
 
-
+.team__content{
+  @include tablets{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // margin: rem(100) auto;
+  }
+}
 .team-acco__item{
-margin: rem(40);
+   margin-bottom: rem(40);
+   @include tablets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin: rem(40) auto;
+   }
+  
+
   &:before{
     content: "";
     display: inline-block;
@@ -90,6 +125,9 @@ margin: rem(40);
     border-right: rem(6) solid transparent;
     border-bottom: rem(12) solid $yellow;
     vertical-align: middle;
+    @include tablets{
+      // ???
+    }
   }
 }
 

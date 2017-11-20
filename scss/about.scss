@@ -25,6 +25,9 @@ $dark: #2f3234;
     text-align: center;
     color: $dark;
     margin-top: rem(-120);
+    @include phones{
+      margin-top: rem(60);
+    }
     
     }
     .about-list{
@@ -35,6 +38,8 @@ $dark: #2f3234;
     align-items: center;
     @include phones {
         flex-direction: column;
+        align-items: center;
+        margin: rem(25);
       }
     }
     .about__item{
@@ -42,6 +47,8 @@ $dark: #2f3234;
     text-align: center;
     @include phones {
         flex-direction: row;
+        text-align: left;
+        margin: 0;
       }
     
     }
@@ -50,10 +57,48 @@ $dark: #2f3234;
     color: $dark;
     text-align: center;
     margin-bottom: rem(20);
+    @include phones {
+      text-align: left;
+      margin: 0;
+    }
     }
     .about__desc{
     font:300 rem(14)ubuntulight;
     color: rgba(47,50,52,.8);
     text-align: center;
     margin: 0;
+    @include phones {
+      text-align: left;
     }
+    }
+    .adaptiv{
+      @include phones {
+        position: absolute;
+        text-align: left;
+        margin-top: rem(-77);
+        margin-left: rem(96);
+      }
+    }
+
+
+    .about__pic{
+      @include phones {
+        text-align: left;
+        margin-right: rem(340);
+        padding: rem(0);
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
