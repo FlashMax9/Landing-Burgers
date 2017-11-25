@@ -5,50 +5,45 @@ $dark: #2f3234;
 $white:#ffffff;
 
 .footer__end{
-    background: url('../img/bg/bg-map.jpg') center bottom no-repeat;
-    background-size: cover;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding:rem(10) rem(0);
-   
+  background: url('../img/bg/bg-map.jpg') center bottom no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding:rem(10) rem(0);
   }
-  // .container{
-  //   width: rem(940);
-  //   margin: 0 auto;
-  //   position: relative;
-  //   }
-  .footer__container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+ 
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+   margin: rem(0) rem(80);
     @include phones {
       flex-direction: column;
     }
   
-  }
+}
   
   .info__footer {
     flex: 1;
-    // width: 50%;
-    // margin-bottom: 15;
     @include phones {
       width: 100%;
       text-align: center;
+      margin-bottom: rem(20);
     }
   
   }
   
   .address {
     color: $white;
-    font: 300 rem( 14 )ubuntulight;
+    font: 300 rem(14) ubuntulight;
   }
   
   .phone {
     color: $orange;
     text-decoration: none;
-    font:rem( 14 ) bold ubuntulight;
+    font: rem(14) 400 ubuntulight;
   }
 
 .info__footer_social {

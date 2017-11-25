@@ -61,13 +61,20 @@ $dark: #2f3234;
         line-height: 1rem;
         top: 70%;
     }
+    @include phones{
+        // line-height: 1rem;
+        top: 80%;
+    }
     }
     .section__title-type-white{
-    font: 400 rem( 72 )gagalinregular;
+    font: 400 rem(72) gagalinregular;
     color: $white;
     position: absolute;
     top: 10%;
     left: 10%;
+    @include phones{
+        margin-top: rem(60);
+    }
     }
     .menu-accord__text{
     font: 300 rem( 14 )ubuntulight;
@@ -75,3 +82,18 @@ $dark: #2f3234;
     line-height:rem(24);
     margin: rem(0);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,6 @@ $green: #8ac03e;
 $dark: #2f3234;
 
 .reviews{
-    // min-width:1100 ;
     min-height: rem(650);
     height: 100vh;
     }
@@ -16,8 +15,6 @@ $dark: #2f3234;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    // flex-flow: row wrap;
-    // min-width: 1100;
     height: 100%;
     @include tablets{
       display: flex;
@@ -25,14 +22,16 @@ $dark: #2f3234;
     }
     .reviews__item{
     flex: 1 0 25%;
-    // // height: 50%;
     position: relative;
     &:hover > .reviews__desc{
     visibility: visible;
     opacity: 1;
     }
-    @include tablets {
-        height: 50%;
+    @include tablets{
+      flex: 1 0 50%
+    }
+    @include phones {
+       flex: 1 0 50%;
         // flex-wrap: wrap;
       }
     }
@@ -50,7 +49,7 @@ $dark: #2f3234;
     right: 0;
     height: 100%;
     width: 100%;
-    padding:rem( 60 ) rem(29);
+    padding: rem(60) rem(29);
     background: rgba(20,20,20,.6);
     opacity: 0;
     visibility: hidden;
@@ -68,6 +67,9 @@ $dark: #2f3234;
     margin-bottom: rem(15);
     @include tablets {
         margin-bottom: rem(14);
+      }
+      @include phones {
+        display: none;
       }
     }
     .reviews__text {
@@ -94,4 +96,19 @@ $dark: #2f3234;
     .btn_gray{
     background: $dark;
     }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     

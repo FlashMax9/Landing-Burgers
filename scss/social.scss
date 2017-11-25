@@ -1,21 +1,21 @@
 
   .social {
-    // position: relative;
-    // top: 50%;
     display: flex;
     align-items: center;
     list-style-type:none;
     margin: rem(0);
     padding: rem(0);
+    @include phones{
+      margin-bottom: rem(20);
+    }
 
   }
   
   .social__item {
-    margin-left: rem(10);
+    margin-left: rem(20);
   }
   
   .social__link {
-    
     display: inline-block;
     max-width: rem(23);
     max-height: rem(20);
@@ -28,7 +28,6 @@
   }
   
   .social__link-icon {
-    // margin-right: rem(30);
     width: rem(20);
     height: rem(20);
   }

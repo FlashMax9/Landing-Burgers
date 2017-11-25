@@ -11,18 +11,17 @@ $white:#fff;
   min-height: rem(650);
   height: 100vh;
   }
-  // .container__order{
-  // width: rem(940);
-  // margin: 0 auto;
-  // position: relative;
-  // display: flex;
-  // flex-direction:column;
-  //  margin-top: rem(40);
-  // }
+  .container__order{
+    max-width:rem(940) ;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction:column;;
+  }
 
   .section__title_order{
-  // margin-top: rem(40);
   text-align: center;
+  margin-top: rem(125);
   margin-bottom: rem(79);
   font: 400 rem( 72 )gagalinregular;
   color: $yellow;
@@ -31,10 +30,10 @@ $white:#fff;
   margin-left: -5%;
   display: flex;
   @include tablets {
-    // display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 0;
+    margin-left: rem(148);
+    width: rem(480);
   }
   }
   .order__form-col {
@@ -44,13 +43,21 @@ $white:#fff;
   @include tablets {
     width: 100%;
     margin-left: 0;
-    padding: 0 20%;
+    padding: 0 rem(35);
+  }
+  @include phones{
+    width: 100%;
+    margin-left: 0;
+    padding: 0 rem(20);
   }
   }
 
   .order__form-row {
   display: flex;
   margin-bottom: rem(16);
+  @include phones{
+    
+  }
   }
 
  
@@ -63,7 +70,6 @@ $white:#fff;
   flex: 1;
   }
   .order__form-block {
-  // display: block;
   width: 100%;
   flex: 1;
   margin-right: rem(40);
@@ -75,78 +81,67 @@ $white:#fff;
   .order__form-input {
   font-size: rem(14);
   // padding: 10;
-  padding:rem( 5 ) rem(10);
-  border:rem(1) solid #d1cfcb;
+  padding: rem(5) rem(10);
+  border: rem(1) solid #d1cfcb;
   border-radius: rem(5);
   width: 100%;
   box-sizing: border-box;
   color: black;
   }
-  // .order__form-input:focus {
-  //   background: rgb(136, 132, 132); 
-  //   border: 1px solid $yellow;
-  // }
-  // .order__radio-elem:focus {
-  //   background: rgb(136, 132, 132); 
-  //   border: 1px solid $yellow;
-  // }
 
   .order__form-buttons{
     margin-left: rem(3);
+    @include phones{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   .order__form-input_textarea {
   height: rem(110);
   resize: none;
   }
+  .order__radio_checkbox{
+    border-radius: 0%;
+    border: 5px solid black;
+  }
 
   .order__radio {
   position: relative;
-  white-space: nowrap;
-  margin-right: rem(20);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+  margin-right: rem(30);
+ 
+  &:before{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: $white;
+    border: 1px solid black;
+    border-radius: 50%;
+    top: -1px;
+    left: -22px;
+    content: '';
   }
- 
+  &:after{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: $orange;
+    border-radius: 50%;
+    left: -17px;
+    top: 4px;
+    opacity: 0;
+    content: '';
+  }
 
-  // .order__radio-elem {
+  }
+  .order__radio-elem {
+    opacity:0;
+  }
+
+  .order__radio-elem:checked +.order__radio:after {
+    opacity:1;
+  }
   
-  // position: absolute;
-  // top: 0;
-  // left: rem(-9999);
- 
-  
-  // }
-
-  // .order__radio-fake {
-  // width: rem(16);
-  // height: rem(16);
-  // border-radius: 50%;
-  // background:$white;
-  // position: relative;
-  // &:after {
-  // content: "";
-  // display: block;
-  // position: absolute;
-  // width: rem(0);
-  // height: rem(0);
-  // border-radius: 50%;
-  // background: $orange;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  // transition: width .3s, height .3s;
-  // }
-  // }
-
-  // .order__radio-elem:checked {
-  // &+.order__radio-fake {
-  // &:after {
-  // width: rem(8);
-  // height: rem(8);
-  // }
-  // }
-  // }
 
   .order__radio-title {
   font-size: rem(14);
@@ -155,7 +150,6 @@ $white:#fff;
   margin-left: rem(10);
   }
 
-
   .order__form-button {
   margin-right: rem(20);
   border: 0;
@@ -163,9 +157,9 @@ $white:#fff;
   text-transform: uppercase;
   border-radius: rem(5);
   color: $white;
-  font:rem( 13 )300 ubuntumedium;
-  padding:rem( 10 ) rem(15);
-  cursor: pointer;
+  font: rem(13) 300 ubuntumedium;
+  padding:rem(10) rem(15);
+  // cursor: pointer;
   }
 
   .order__form-button_reset {
