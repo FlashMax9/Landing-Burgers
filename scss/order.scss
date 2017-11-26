@@ -32,7 +32,12 @@ $white:#fff;
   @include tablets {
     flex-direction: column;
     align-items: center;
-    margin-left: rem(148);
+    margin:rem(0) rem(140);
+   width: rem(480);
+   
+  }
+  @include phones{
+    margin:rem(0) rem(50);
     width: rem(480);
   }
   }
