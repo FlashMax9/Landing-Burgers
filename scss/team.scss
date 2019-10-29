@@ -1,0 +1,136 @@
+$orange: #e25028;
+$yellow: #f8b43a;
+$green: #8ac03e;
+$dark: #2f3234;
+$white:#ffff;
+
+.team {
+    background: url('../img/bg/bg-team.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: rem(650);
+    height: 100vh;
+    }
+    .team-acco{
+      margin: rem(0);
+      padding: rem(0);
+      list-style: none;
+      @include tablets{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        // margin: rem(100) auto;
+      }
+    }
+    .team-acco__pic-img{
+    width: rem(100);
+    height: rem(100);
+    border-radius: 50%;
+    margin-right: rem(30);
+    }
+    .section-title{
+    color: $yellow;
+    font: 400 rem(72) gagalinregular;
+    }
+    .team-acco__trigger{
+    font: 400 rem(14) gagalinregular;
+    color: $white;
+    text-decoration: none;
+    @include tablets {
+      font-size: rem(25);
+      
+    }
+    }
+    .team-acco__text{
+      @include tablets{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+    .team-acco__text-title{
+    font: 700 rem(14) ubuntulight;
+    color: $white;
+    }
+    .team-acco__text-content{
+    font:300 rem(14) ubuntulight;
+    color: $white;
+    }
+    .team__container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background: rgba(#2f3234, .93);
+    padding-left: rem(70);
+    display: flex;
+    flex-direction: column;
+    padding-top: rem(50);
+    
+    @include tablets {
+      width: 100%;
+      padding: 0;
+    }
+    
+    }
+    .team-acco__content {
+    display: flex;
+    padding-top: rem(17);
+    padding-bottom: rem(11);
+    @include tablets{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      // flex-wrap: wrap;
+    }
+    }
+    .team-acco__content {
+    display: none;
+    }
+    .team-acco__item_active {
+    .team-acco__trigger {
+    color: $yellow;
+    }
+  
+    .team-acco__content {
+    display:inline-flex;
+    }
+  }
+
+.team__content{
+  @include tablets{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // margin: rem(100) auto;
+  }
+}
+.team-acco__item{
+   margin-bottom: rem(40);
+   @include tablets{
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // margin: rem(40) auto;
+   }
+  
+
+  &:before{
+    content: "";
+    display: inline-block;
+    width: rem(0);
+    height: rem(0);
+    border-left: rem(6) solid transparent;
+    border-right: rem(6) solid transparent;
+    border-bottom: rem(12) solid $yellow;
+    vertical-align: middle;
+    @include tablets{
+      // ???
+    }
+  }
+}
+
+
+
+

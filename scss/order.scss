@@ -1,0 +1,175 @@
+$orange: #e25028;
+$yellow: #f8b43a;
+$green: #8ac03e;
+$dark: #2f3234;
+$white:#fff;
+
+  .order{
+  background: url('../img/bg/order-bg.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: rem(650);
+  height: 100vh;
+  }
+  .container__order{
+    max-width:rem(940) ;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction:column;;
+  }
+
+  .section__title_order{
+  text-align: center;
+  margin-top: rem(125);
+  margin-bottom: rem(79);
+  font: 400 rem( 72 )gagalinregular;
+  color: $yellow;
+  }
+  .order__form {
+  margin-left: -5%;
+  display: flex;
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    margin:rem(0) rem(140);
+   width: rem(480);
+   
+  }
+  @include phones{
+    margin:rem(0) rem(50);
+    width: rem(480);
+  }
+  }
+  .order__form-col {
+  width: 45%;
+  margin-left: 5%;
+ 
+  @include tablets {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 rem(35);
+  }
+  @include phones{
+    width: 100%;
+    margin-left: 0;
+    padding: 0 rem(20);
+  }
+  }
+
+  .order__form-row {
+  display: flex;
+  margin-bottom: rem(16);
+  @include phones{
+    
+  }
+  }
+
+ 
+  .order__form-label {
+    margin-right: rem(20);
+  margin-bottom: rem(17);
+  font: 300 ubuntulight;
+  color: $white;
+  font-size: rem(14);
+  flex: 1;
+  }
+  .order__form-block {
+  width: 100%;
+  flex: 1;
+  margin-right: rem(40);
+
+  & :last-child {
+  margin-right: rem(0);
+  }
+  }
+  .order__form-input {
+  font-size: rem(14);
+  // padding: 10;
+  padding: rem(5) rem(10);
+  border: rem(1) solid #d1cfcb;
+  border-radius: rem(5);
+  width: 100%;
+  box-sizing: border-box;
+  color: black;
+  }
+
+  .order__form-buttons{
+    margin-left: rem(3);
+    @include phones{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .order__form-input_textarea {
+  height: rem(110);
+  resize: none;
+  }
+  .order__radio_checkbox{
+    border-radius: 0%;
+    border: 5px solid black;
+  }
+
+  .order__radio {
+  position: relative;
+  margin-right: rem(30);
+ 
+  &:before{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: $white;
+    border: 1px solid black;
+    border-radius: 50%;
+    top: -1px;
+    left: -22px;
+    content: '';
+  }
+  &:after{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: $orange;
+    border-radius: 50%;
+    left: -17px;
+    top: 4px;
+    opacity: 0;
+    content: '';
+  }
+
+  }
+  .order__radio-elem {
+    opacity:0;
+  }
+
+  .order__radio-elem:checked +.order__radio:after {
+    opacity:1;
+  }
+  
+
+  .order__radio-title {
+  font-size: rem(14);
+  color: $white;
+  font: 300 ubuntulight;
+  margin-left: rem(10);
+  }
+
+  .order__form-button {
+  margin-right: rem(20);
+  border: 0;
+  background: $orange;
+  text-transform: uppercase;
+  border-radius: rem(5);
+  color: $white;
+  font: rem(13) 300 ubuntumedium;
+  padding:rem(10) rem(15);
+  // cursor: pointer;
+  }
+
+  .order__form-button_reset {
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: none;
+  background: transparent;
+  }

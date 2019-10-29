@@ -1,0 +1,33 @@
+
+  .social {
+    display: flex;
+    align-items: center;
+    list-style-type:none;
+    margin: rem(0);
+    padding: rem(0);
+    @include phones{
+      margin-bottom: rem(20);
+    }
+
+  }
+  
+  .social__item {
+    margin-left: rem(20);
+  }
+  
+  .social__link {
+    display: inline-block;
+    max-width: rem(23);
+    max-height: rem(20);
+    opacity: .3;
+    transition: .3s;
+    &:hover {
+      opacity: 1;
+    
+    }
+  }
+  
+  .social__link-icon {
+    width: rem(20);
+    height: rem(20);
+  }

@@ -1,0 +1,40 @@
+$orange: #e25028;
+$yellow: #f8b43a;
+$green: #8ac03e;
+$dark: #2f3234;
+
+.points{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top:rem(91);
+    right: rem(50);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1000;
+    @include phones{
+        display: none;
+    }
+    }
+    .points__item{
+    width: rem(16);
+    height: rem(16);
+    border-radius: 50%;
+    position: relative;
+    &:after{
+    content: "";
+    width: rem(6);
+    height: rem(6);
+    position: absolute;
+    border-radius: 50%;
+    background: $white;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+    }
+    &:hover{
+    border:rem( 1 )solid $white;
+    
+    }
+    }

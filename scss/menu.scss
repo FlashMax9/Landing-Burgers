@@ -1,0 +1,99 @@
+$orange: #e25028;
+$yellow: #f8b43a;
+$green: #8ac03e;
+$dark: #2f3234;
+
+.menu{
+    background-image: url('../img/bg/bg-menu.jpg');
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    min-height: rem(650);
+    }
+    .menu-accord{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    }
+    .menu-accord__item,.menu-accord__link{
+    height: 100%;
+    display: block;
+    position: relative;
+    display: flex;
+    }
+    .menu-accord__link{
+    width: rem(80);
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    
+    }
+    .menu-accord__item-type-active .menu-accord__description{
+    width: rem(550);
+    padding:rem( 63 ) rem(35);
+    display: none;
+    }
+    .menu-accord__item{
+    display: flex;
+    }
+    .menu-accord__description{
+    width: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.7);
+    box-sizing: border-box;
+    
+    }
+    .menu-accord__title{
+    font: 400 rem( 40 )gagalinregular;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-90deg) translateY(-50%);
+    display: inline-block;
+    white-space: nowrap;
+    color: $white;
+    line-height: 1rem;
+    @include tablets{
+        line-height: 1rem;
+        top: 70%;
+    }
+    @include phones{
+        // line-height: 1rem;
+        top: 80%;
+    }
+    }
+    .section__title-type-white{
+    font: 400 rem(72) gagalinregular;
+    color: $white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    @include phones{
+        margin-top: rem(60);
+    }
+    }
+    .menu-accord__text{
+    font: 300 rem( 14 )ubuntulight;
+    color: $white;
+    line-height:rem(24);
+    margin: rem(0);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
